@@ -33,6 +33,8 @@ In this LED fade assignment, we started using a slightly different code function
 
 ### Reflection
 
+This assignent was more of review from last year. It was simple, I just had to read a bit about the analogWrite function from the [Article](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/) on the Arduino Website, because I forgot.
+
 ## HelloFunctions
 
 ### Description & Code
