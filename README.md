@@ -31,6 +31,8 @@ In this LED fade assignment, we started using a slightly different code function
 
 ### Images
 
+<img src="Images/LEDFade.png" alt="LEDFade" width="500" height="400">
+
 ### Reflection
 
 This assignent was more of review from last year. It was simple, I just had to read a bit about the analogWrite function from the [Article](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/) on the Arduino Website, because I forgot.
@@ -98,7 +100,7 @@ void loop() {
 
 ### Images
 
-<img src="Images/HelloFunctions.png" alt="Base-Mount" width="500" height="400">
+<img src="Images/HelloFunctions.png" alt="HelloFunctions" width="500" height="400">
 
 ### Reflection
 
