@@ -97,7 +97,8 @@ void loop() {
 
 
 ### Images
-draw it yourself, take a picture, make a fritzing, whatever you want to EFFECTIVELY communicate how its put together.
+
+<img src="Images/HelloFunctions.png" alt="Base-Mount" width="500" height="400">
 
 ### Reflection
 
