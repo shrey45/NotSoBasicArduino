@@ -38,7 +38,8 @@ This assignent was more of review from last year. It was simple, I just had to r
 ## HelloFunctions
 
 ### Description & Code
-Description goes here
+
+In this assignment, I had to make an ultrasonic sensor read distance and move a servo according to the servo. Easy right? NO, but Yes. We weren't allowed to use the NewPing library, and we had to use a new concept called functions to write our code. Functions aren't that complex. Instead of having 20 lines of code to do something super complicating, you would only need to writ 1 line of code(but that 20 lines of code is still there, it's just to the side so it dosen't get too confusing).
 
 Here's how you make code look like code:
 
@@ -64,10 +65,33 @@ void getDistance(int trigPin, int echoPin ) {
   delay(50);
 }
 ```
-Talk about how the code works, here....
+**FYI - This is my function code** All this code does is that it tells the sensor to turn off, then turn on, then off again. By doing this it creates a wave so it bounces of the nearest sensed object and comes back(that's how ultrasonic sound/waves work. FUN Fact - Dolphins use the same techinique to find food). Then, it takes the amount of time it took for the wave to come back, and converts it to **distance** with a simple formula(distance = duration * 0.034/2;). Now that I got the distance, I had to see how to get it to work as a function. You see where it says **void distance(...)** in the code? That's all you need to use a function. Use **void** and then next to it put whatever you want to name your function(I named mine getDistance, but it could even be cookie). put your long code in the {...} of the void function and you're done. When writing the code you will be looking at, just write your function name(DON'T WRITE VOID), and it would work. **Here's what my final code looked like**(I had another function called servoFunction to move the servo).
+
+```C++
+void setup() {
+  // Define inputs and outputs:
+ 
+  myservo.attach(4);
+  //Begin Serial communication at a baudrate of 9600:
+  Serial.begin(9600);
+}
+void loop() {
+
+  getDistance(2,3);
+
+  if (distance > 100) {
+    servoFunction(180);
+  }
+  else {
+    servoFunction(0);
+  }
+}
+```
 
 ### Evidence
-link goes here
+
+[HelloFunctions on Arduino Create](https://create.arduino.cc/editor/sypr45/b6ea4a67-0f89-489c-891d-af50d6261f63/preview)
+
 
 ### Images
 draw it yourself, take a picture, make a fritzing, whatever you want to EFFECTIVELY communicate how its put together.
