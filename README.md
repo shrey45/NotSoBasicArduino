@@ -78,12 +78,15 @@ void setup() {
 void loop() {
 
   getDistance(2,3);
+  //Sends ultrasonic wave to object and records distance
 
   if (distance > 100) {
     servoFunction(180);
+    //moves servo clockwise
   }
   else {
     servoFunction(0);
+    //moves servo anti-clockwise
   }
 }
 ```
