@@ -98,6 +98,8 @@ draw it yourself, take a picture, make a fritzing, whatever you want to EFFECTIV
 
 ### Reflection
 
+It was a new assignment to me, but it was still very simple. The main thing to remember is to not try and overthink anything. If you just read and follow the instructions, it will be easy. ALSO, when writing your functions make sure to add () at the end of it. I took a long time trying to figure out why my code was not running according to plan b/c I forgot to add ().
+
 ## NewPing
 
 ### Description & Code
