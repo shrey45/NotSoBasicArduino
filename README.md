@@ -141,5 +141,8 @@ Talk about how the code works, here....
 
 ### Images
 
+<img src="Images/NewPing.png" alt="NewPing" width="500" height="400">
+
 ### Reflection
 
+Once you understand what the use of a library is, and ho helpful it is, you will probably be using a library in every project you do. Some people have made libraries with HUNDREDS of lines of code, so we can just use that! The only thing is that it is important to know what you're doing instead of just copying and pasting libraries and functions.
