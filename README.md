@@ -109,20 +109,37 @@ It was a new assignment to me, but it was still very simple. The main thing to r
 ## NewPing
 
 ### Description & Code
-Description goes here
+
+In this adventure into Arduino, we explore the NewPing library. Funny thing is... a library is a space with a million functions in it. So... you really never need to do all that code that we did in the last assignment to make an ultrasonic sensor function. Functions are still very heandy especially when your working on a custom project, and you're repeating the same chunk of code 20 times in your code. Anyway, hats off to Tim Eckel - He made the Newping library so we don't have to spend 5 hours making an ulrasonic sensor do something. When we use a library, we mention it at the top of our code, and whenever we need to use something from that library, we call the specific function that we want. As far as wiring 2 pins go to **Power and GND**, and 2 go to pins on the board.
 
 Here's how you make code look like code:
 
 ```C++
-Code goes here
+#include <NewPing.h>
+int trigPin = 2;
+int echoPin = 4;
+NewPing sensor1(trigPin, echoPin, 200);
+int distance; 
+
+void setup() {
+    pinMode (trigPin, OUTPUT);
+    pinMode (echoPin, INPUT);
+    myservo.attach(7);
+    Serial.begin(9600);
+}
+
+void loop() {
+   distance = sensor1.ping_cm();
+     Serial.println("Distance = ")
+     Serial.println(distance);
 ```
 Talk about how the code works, here....
 
 ### Evidence
-link goes here
+
+[NewPing on Arduino Create](https://create.arduino.cc/editor/sypr45/c47be415-c295-44e4-ad8b-d86bdb5a99ff/preview)
 
 ### Images
-draw it yourself, take a picture, make a fritzing, whatever you want to EFFECTIVELY communicate how its put together.
 
 ### Reflection
 
